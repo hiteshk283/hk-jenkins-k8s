@@ -29,6 +29,7 @@ spec:
         volumeMounts:
         - name: jenkins-home
           mountPath: /var/jenkins_home
+      serviceAccountName: jenkins-sa
       volumes:
       - name: jenkins-home
         persistentVolumeClaim:
