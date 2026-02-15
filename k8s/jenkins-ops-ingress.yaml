@@ -3,10 +3,12 @@ kind: Ingress
 metadata:
   name: jenkins-ops-ingress
   namespace: hk-jenkins
-  annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - jenkins-ops.local
+    secretName: jenkins-ops-tls
   rules:
   - host: jenkins-ops.local
     http:
@@ -17,5 +19,4 @@ spec:
           service:
             name: jenkins-ops-service
             port:
-              number: 443
-
+              number: 8080

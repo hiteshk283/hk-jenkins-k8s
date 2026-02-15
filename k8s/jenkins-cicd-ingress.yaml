@@ -3,10 +3,12 @@ kind: Ingress
 metadata:
   name: jenkins-cicd-ingress
   namespace: hk-jenkins
-  annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+    - jenkins-cicd.local
+    secretName: jenkins-cicd-tls
   rules:
   - host: jenkins-cicd.local
     http:
@@ -17,5 +19,4 @@ spec:
           service:
             name: jenkins-cicd-service
             port:
-              number: 443
-
+              number: 8080
