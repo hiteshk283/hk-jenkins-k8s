@@ -3,8 +3,6 @@ kind: Ingress
 metadata:
   name: jenkins-ops-ingress
   namespace: hk-jenkins
-  annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   ingressClassName: nginx
   rules:
