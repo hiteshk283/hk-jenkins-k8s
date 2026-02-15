@@ -17,5 +17,5 @@ spec:
           service:
             name: jenkins-cicd-service
             port:
-              number: 443
+              number: 8080
 
