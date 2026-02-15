@@ -19,4 +19,9 @@ spec:
           service:
             name: jenkins-ops-service
             port:
+<<<<<<< HEAD
               number: 8080
+=======
+              number: 8081
+
+>>>>>>> ebea91a554ab57c5b1a90ea37bf9adba42c3cdc2
