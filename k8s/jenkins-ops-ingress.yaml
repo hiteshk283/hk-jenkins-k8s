@@ -17,5 +17,5 @@ spec:
           service:
             name: jenkins-ops-service
             port:
-              number: 443
+              number: 8081
 
