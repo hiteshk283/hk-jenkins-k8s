@@ -33,7 +33,7 @@ spec:
           mountPath: /var/jenkins_home
         - name: docker-sock
           mountPath: /var/run/docker.sock
-
+      serviceAccountName: jenkins-sa
       volumes:
       - name: jenkins-home
         persistentVolumeClaim:
