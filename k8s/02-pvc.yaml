@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: jenkins-cicd-pvc
+  name: jenkins-cicd-pvc-v1
   namespace: hk-jenkins
 spec:
   storageClassName: hostpath

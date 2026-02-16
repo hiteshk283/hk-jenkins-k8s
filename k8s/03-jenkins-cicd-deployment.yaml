@@ -37,7 +37,7 @@ spec:
       volumes:
       - name: jenkins-home
         persistentVolumeClaim:
-          claimName: jenkins-cicd-pvc
+          claimName: jenkins-cicd-pvc-v1
       - name: docker-sock
         hostPath:
           path: /var/run/docker.sock
