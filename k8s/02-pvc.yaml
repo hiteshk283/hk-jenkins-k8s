@@ -4,9 +4,9 @@ metadata:
   name: jenkins-cicd-pvc
   namespace: hk-jenkins
 spec:
+  storageClassName: hostpath
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
-
