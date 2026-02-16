@@ -22,11 +22,11 @@ spec:
 
         resources:
           requests:
-            memory: "512Mi"
-            cpu: "250m"
+            memory: "2Gi"
+            cpu: "512m"
           limits:
-            memory: "1Gi"
-            cpu: "500m"
+            memory: "4Gi"
+            cpu: "1Gi"
 
         volumeMounts:
         - name: jenkins-home
